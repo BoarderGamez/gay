@@ -4,6 +4,8 @@ Set Seek as your default search engine for private and secure searching.
 
 ## Installation
 
+First, download the repo as .zip
+
 ### Chrome
 
 1. Open `chrome://extensions/`
