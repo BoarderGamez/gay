@@ -16,3 +16,5 @@ Set Seek as your default search engine for private and secure searching.
 1. Open `about:debugging#/runtime/this-firefox`
 2. Click "Load Temporary Add-on"
 3. Select the `manifest.json` file in the `extension` folder
+
+**Release on Chrome Web Store and Firefox Addons Coming Soon**
