@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
     --base: #1e1e2e;
     --text: #cdd6f4;
     --rosewater: #f5e0dc;
@@ -61,6 +61,7 @@
 .theme-toggle svg {
   width: 20px;
   height: 20px;
+  pointer-events: none;
 }
 
 .theme-toggle .icon-sun,

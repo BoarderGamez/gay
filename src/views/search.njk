@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="/css/search.css">
 {% endblock %}
 
+{% block theme_toggle %}{% endblock %}
+
 {% block content %}
 <div class="page">
   <header class="header">
@@ -40,5 +42,11 @@
 <script src="/js/autocomplete.js"></script>
 <script>
   initAutocomplete('.header-search .search-input', '.header-search');
+  
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'seek-theme') {
+      document.documentElement.setAttribute('data-theme', e.data.theme);
+    }
+  });
 </script>
 {% endblock %}
